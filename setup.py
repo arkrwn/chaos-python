@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="chaos python client", # Replace with your own username
-    version="0.0.1",
+    version="1.0.0",
     author="Arie Kurniawan",
     author_email="hubungi.aja@gmail.com",
     description="[Unofficial] Python client for contacting with chaos API",
@@ -18,5 +18,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3',
 )
