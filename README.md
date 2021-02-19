@@ -24,7 +24,7 @@ This will display help for the tool. Here are all the switches it supports.
 In order to get subdomains for a domain, use the following command.
 
 ```bash
-↳ python3 chaos.py --key MASKED_API_KEY --domain gojek.com  
+↳ python3 chaos-client.py --key MASKED_API_KEY --domain gojek.com  
 mail.gojek.com
 mailserver.gojek.com
 gocorp.gojek.com
@@ -43,9 +43,31 @@ newsroom.gojek.com
 To get the number of subdomains count, you can use the `count` flag.
 
 ```bash
-↳ python3 chaos.py --key MASKED_API_KEY --domain gojek.com --count
+↳ python3 chaos-client.py --key MASKED_API_KEY --domain gojek.com --count
 13
 ```
+
+### Use as python module:
+
+```bash
+pip3 install chaos_python==0.0.1
+```
+### example:
+
+```python
+from chaos_python.client import chaosAPI as chaosapi
+
+domain = "example.com"
+key = "XXXXXXXXX"
+options = "default"
+
+print(chaosapi(domain, key, options))
+```
+
+Available options:
+    - default   : output will be only subdomains
+    - count     : output will be only count of subdomain
+    - json      : output as JSON format
 ### How to avail `API_KEY`
 
 As of now Chaos dataset is in beta for testing and API endpoint access available to invited users only, you can request an invite for yourself [here](https://forms.gle/GP5nTamxJPfiMaBn9)
@@ -55,6 +77,7 @@ As of now Chaos dataset is in beta for testing and API endpoint access available
 
 - The API is rate-limited to 1 request at a time per token.
 - Chaos API **only** supports domain name to query.
+- All API is owned by : ProjectDiscovery, Inc.
 
 📌 Reference
 -----
