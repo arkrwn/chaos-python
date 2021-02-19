@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="chaos python client", # Replace with your own username
+    name="Chaos Python Client", # Replace with your own username
     version="1.0.0",
     author="Arie Kurniawan",
     author_email="hubungi.aja@gmail.com",

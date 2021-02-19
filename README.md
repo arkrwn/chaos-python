@@ -50,7 +50,7 @@ To get the number of subdomains count, you can use the `count` flag.
 ### Use as python module:
 
 ```bash
-pip3 install chaos_python==0.0.1
+pip3 install Chaos-Python-Client==1.0.0
 ```
 ### example:
 
