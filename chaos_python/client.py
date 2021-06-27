@@ -16,4 +16,4 @@ def chaosAPI(domain, key, opt):
 		elif opt == 'json':
 			return response
 	else:
-		return "Please define an options"
+		return "Please define an option"
